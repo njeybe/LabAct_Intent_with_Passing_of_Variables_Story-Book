@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:weightSum="3"
+    android:background="@drawable/homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#87000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="BATANG LIDER"
+            android:textColor="#A61818"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#87000000">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:background="#58661111"
+            android:id="@+id/et_character"
+            android:hint="Enter character's name: "
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:textColorHint="#fff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#87000000">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:backgroundTint="#7C9D2C20"
+            android:text="Proceed"
+            android:onClick="proceed"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</LinearLayout>
