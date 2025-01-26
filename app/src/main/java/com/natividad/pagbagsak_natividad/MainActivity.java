@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
 
         et_character = (EditText) findViewById(R.id.et_character);
     }
-
-    //proceed
     public void proceed(View view){
         str_character = et_character.getText().toString();
 
